@@ -1,6 +1,5 @@
 import exceptions.ChoiceException;
 
-import java.util.Objects;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -45,20 +44,6 @@ public class Main {
         throw new ChoiceException(escolhaJogador + "Não existe dentro das opções.");
         }
     }
-
-//    public static void medirExecucaoDoPrograma(String escolhaJogador){
-//        long inicio = System.nanoTime();
-//        long fim = System.nanoTime();
-//        validarEntradas(escolhaJogador);
-//        System.out.printf("Tempo: %.10f ms%n",
-//                (fim - inicio) / 1_000_000.0);
-//    }
-//public boolean ganhaDe(opcoes outra){
-//    return (this.equals(opcoes.PEDRA) && outra.equals(opcoes.TESOURA)) ||
-//            (this.equals(opcoes.PAPEL) && outra.equals(opcoes.PEDRA)) ||
-//            (this.equals(opcoes.TESOURA) && outra.equals(opcoes.PAPEL));
-//}
-
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
